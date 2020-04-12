@@ -1,0 +1,28 @@
+<view class="atd-verify-wrapper {{className}}">
+  <view class="atd-logo">redux - 管理状态</view>
+  <view class="atd-tel-wrapper">
+    <!--手机号-->
+    <label for="mobile" class="atd-input-con">
+      <view class="atd-title-field">
+        <image mode="widthFix" src="/images/login_icon1.png" style="width: 28rpx;"/>
+      </view>
+      <input name="mobile" placeholder="请输入正确的手机号" placeholder-class="placeholder" type="number" maxlength="{{11}}" bindinput="onMobileInput" value="{{message.mobile}}" />
+    </label>
+
+    <!--图形验证-->
+    <label for="imgcode" class="atd-input-con flex-align-center" a:if="{{pageType==2}}">
+      <view class="atd-title-field">
+        <image mode="widthFix" src="/images/login_icon2.png"/>        
+      </view>
+      <input name="imgcode" placeholder="请输入图形验证码" placeholder-class="placeholder" type="text" maxlength="{{4}}" bindinput="onMobileImgCode" value="{{message.code}}" />
+    </label>
+  
+    <!-- 公司名称 -->
+    <label for="companyName" class="atd-input-con">
+      <view class="atd-title-field">
+        <image mode="widthFix" src="/images/login_icon5.png"/>
+      </view>
+      <input name="companyName" placeholder="请输入公司名称" placeholder-class="placeholder" type="text" bindinput="onCompanyName" value="{{message.companyName}}" />
+    </label>
+  </view>
+</view> 

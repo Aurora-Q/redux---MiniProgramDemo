@@ -1,0 +1,11 @@
+
+<view class="register_container">
+    <login 
+    bind:mobile="onGetMobileMessage"
+    bind:code="onGetCode"
+    bind:company="onGetCompanyName"
+    >
+    </login>
+    <button class="button" bindtap="onClear">清除</button>
+ </view>
+
