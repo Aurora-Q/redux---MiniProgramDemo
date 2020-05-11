@@ -1,0 +1,22 @@
+
+<view class="container">
+    <scroll-view class="container_left" scroll-y="true" style="height:100vh">
+        <view class="container_left_body" wx:for="{{list}}" wx:key="index">
+            <view class="container_menu_list {{selectedMenuId === item.menu_id ? 'container_menu_list_active' : ''}}" data-item="{{item}}" bindtap="onClickMenu">{{item.name}}</view>
+        </view>
+    </scroll-view>
+    <scroll-view class="container_right" scroll-y="true" style="height:100vh">
+        <view class="container_right_body" wx:for="{{goods}}" wx:key="index" wx:if="{{selectedMenuId === item.menu_id}}">
+            <view class="container_right_header" wx:if="{{item.banner}}">
+                <image class="container_right_header_image" src="{{item.banner}}" />
+            </view>
+            <view class="container_right_body_title">{{item.special_name}}</view>
+            <view class="container_right_body_good">
+                <view class="container_right_body_show" wx:for="{{item.good}}" wx:for-item="_item" wx:key="index" data-item="{{_item}}" bindtap="onToDetail">
+                    <image class="container_right_body_good_image" src="{{_item.good_cover}}"/>
+                    <view class="container_right_body_good_name">{{_item.good_name}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

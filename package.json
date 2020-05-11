@@ -1,0 +1,30 @@
+{
+  "name": "redux-miniprogram",
+  "version": "1.0.0",
+  "main": "actionTypes.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "weapp-redux": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurora-Q/redux---MiniProgramDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurora-Q/redux---MiniProgramDemo/issues"
+  },
+  "homepage": "https://github.com/Aurora-Q/redux---MiniProgramDemo#readme",
+  "description": ""
+}

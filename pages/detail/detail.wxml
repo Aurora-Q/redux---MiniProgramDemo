@@ -1,0 +1,6 @@
+<view class="detail_container">
+    <view class="detail_container_img">
+        <image class="detail_container_img_url" mode="widthFix" src="{{detail.good_cover}}"/>
+    </view>
+    <view class="detail_container_name">{{detail.good_name}}</view>
+</view>

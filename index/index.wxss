@@ -1,9 +1,0 @@
-.register_container button{
-  margin: 0 32rpx;
-}
-
-.button {
-  background-color: #3573FA;
-  border-color: #3573FA;
-  color: #fff;
-}

@@ -1,0 +1,11 @@
+.detail_container {
+    height: 100%;
+}
+
+.detail_container_img {
+    width: 100%;
+}
+
+.detail_container_img_url {
+    width: 100%;
+}
